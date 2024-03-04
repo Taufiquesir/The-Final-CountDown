@@ -1,0 +1,25 @@
+When writing JSX code, there's one important rule: A JSX value must have only one root element.
+But it has a downside: You now have that extra <div> in your DOM - even though you don't really need it (besides for getting rid of the this error).
+
+That's why React offers a better solution: A special JSX element called "React Fragment".
+
+
+Refs and Portals
+
+Accessing DOM Elements with   Refs
+Managing Focus/values in a React Application
+Portals in React
+Exposing APS functions from components
+Detatching DOM Rendering from JSX structure with Portals
+
+Caution:
+Refs are a powerful feature in React, and they should be used sparingly.
+If you find yourself using refs often, you may want to reconsider the design of your components.
+using refs can make your app harder to understand by making data flow less clear.
+Don't manipulate the DOM with refs unless you absolutely have to. because it can make your app harder to understand and maintain.
+Manipulating the DOM directly can cause problems in your application.
+
+Whenever refs changes the components function won't get re-executed, so the component will not get re-rendered.
+Refs are used to connect any kind of values, not just DOM elements. 
+
+useImperativeHandle is a hook that allows you to expose certain functions to the parent component.
